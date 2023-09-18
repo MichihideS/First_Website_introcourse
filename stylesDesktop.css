@@ -1,7 +1,7 @@
 @media screen and (min-width:768px){
 
     body {
-        background-image: url(pictures/background.jpg);
+        background-image: url(pictures/landscape.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -9,7 +9,7 @@
     h1 {
         text-align: center;
         font-size: 4rem;
-        text-shadow: 2px 2px rgb(100, 61, 2);
+        text-shadow: 2px 2px rgb(100, 61, 2);   
     }
 
     .flex-container {
@@ -22,20 +22,49 @@
 
     .flex-container > p {
         border-radius: 1rem;
-        background-color: rgb(220, 198, 169);
+        background-color: rgb(212, 188, 153);
         font-size: 2rem;
         padding: 0.8rem;
         margin: 2px;
-        transition: font-size 0.7s, background-color 0.7s, transform 0.7s;
+        transition-duration: 0.7s;
         text-align: center;
         border-style: solid;
         border-color: rgb(87, 56, 6);
         text-shadow: 2px 2px black;
     }
 
-    p:hover {
+    .flex-container > p:hover {
         font-size: 3.5rem;
         background-color: brown;
+    }
+
+    .flex-container-menu {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flex-container-menu > p {
+        color: aliceblue;
+        background-color: darkgreen;
+        font-size: 1rem;
+        padding: 0.2rem;
+        margin: 1px;
+        transition-duration: 0.3s;
+        text-align: center;
+        border-style: solid;
+        border-color: black;
+        text-shadow: 1px 1px black;
+        transition-duration: 0.2s;
+    }
+
+    .flex-container-menu > p:hover {
+        background-color: black;
+    }
+
+    .flex-container-menu > p:active {
+        background-color: midnightblue;
     }
 
     a {
@@ -48,12 +77,12 @@
         border-color: rgb(87, 56, 6);
         border-width: 5px;
         padding: 1rem;
-        background: url(pictures/wheat.jpg);
+        background: url(pictures/barn.jpg);
     }
 
     .buttonMain {
         border-radius: 1rem;
-        background-color: gainsboro;
+        background-color: antiquewhite;
         font-size: 2rem;
         border-style: solid;
         border-color: rgb(65, 48, 20);
@@ -113,4 +142,5 @@
        color: aliceblue;
        text-shadow: 1px 1px black;
     }
+
 }
