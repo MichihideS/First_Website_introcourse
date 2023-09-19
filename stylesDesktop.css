@@ -1,68 +1,78 @@
+/* Använder detta styling doc om bredd är högre än 767px */
 @media screen and (min-width:768px){
 
+    /* Sätter regler för bakgrund för hela bodyn (täcka skärm + no dupe) */
     body {
         background-image: url(pictures/landscape.jpg);
         background-size: cover;
         background-repeat: no-repeat;
     }
 
+    /* Bestämmer hur headern ska se ut, position, storlek och skugga */
     h1 {
         text-align: center;
         font-size: 4rem;
         text-shadow: 2px 2px rgb(100, 61, 2);   
     }
 
+    /* flexbox settings för navigering på index.html */
     .flex-container {
-        flex-wrap: wrap;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
         height: 1rem;
         margin-bottom: 6rem;
     }
 
+    /* settings för alla paragrapher inom flex-container */
     .flex-container > p {
         border-radius: 1rem;
         background-color: rgb(212, 188, 153);
         font-size: 2rem;
-        padding: 0.8rem;
-        margin: 2px;
-        transition-duration: 0.7s;
+        padding: 0.8rem; /* Mellanrummet inom en "box" */
+        margin: 0.2rem; /* Mellanrummet mellan boxarna */
+        transition-duration: 0.7s; /* Tid för transition när man hoverar */
         text-align: center;
         border-style: solid;
         border-color: rgb(87, 56, 6);
         text-shadow: 2px 2px black;  
     }
 
+    /* settings för alla paragrapher inom flex-container när man hoverar över dem */
     .flex-container > p:hover {
         font-size: 3.5rem;
         background-color: brown;
     }
 
+    /* flexbox settings för snabbnavigeringen längst ner på alla sidor utom index.html */
     .flex-container-menu {
-        flex-wrap: wrap;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
         align-items: center;
     }
 
+    /* settings för alla paragrapher inom flex-container-menu */
     .flex-container-menu > p {
         color: aliceblue;
         background-color: darkgreen;
         font-size: 1rem;
-        padding: 0.2rem;
-        margin: 1px;
+        padding: 0.2rem; /* Mellanrummet inom en "box" */
+        margin: 1px; /*Mellanrummet mellan boxarna */
         text-align: center;
         border-style: solid;
         border-color: black;
         text-shadow: 1px 1px black;
-        transition-duration: 0.2s;
+        transition-duration: 0.2s; /*Tid för transition när man hoverar */
     }
 
+    /* settings för alla paragrapher inom flex-container-menu när man hoverar över dem */
     .flex-container-menu > p:hover {
         background-color: black;
     }
 
+    /* flexbox settings för bilderna på index.html */
     .flex-container-pictures {
         display: flex;
         flex-wrap: wrap;
@@ -70,21 +80,25 @@
         align-items: center;
     }
 
+    /* settings för all div's inom flex-container-pictures */
     .flex-container-pictures > div {
         padding: 1rem;
-        transition-duration: 0.3s;
+        transition-duration: 0.3s; /* Tid för transition när man hoverar */
         margin-top: 2rem;
     }
 
+    /* settings för alla div's inom flex-container-pictures när man hoverar */
     .flex-container-pictures > div:hover {
-        scale: 1.2;
+        scale: 1.2; /* Upscalar bilden till 1.2x original storlek */
     }
 
+    /* stylar om alla hyperlänkar */
     a {
         color: beige;
         text-decoration: none;
     }
 
+    /* settings för main headern */
     .titleBorder {
         border-style: solid;
         border-color: rgb(87, 56, 6);
@@ -93,23 +107,26 @@
         background: url(pictures/barn.jpg);
     }
 
+    /* settings för huvudknappen (trivian med funktioner) på alla sidor utom index.html */
     .buttonMain {
         border-radius: 1rem;
         background-color: antiquewhite;
         font-size: 2rem;
         border-style: solid;
         border-color: rgb(65, 48, 20);
-        margin: 0 auto;
-        display: block;
-        transition-duration: 0.3s;
+        margin: 0 auto; /* Centrerar */
+        display: block; /* Centrerar */
+        transition-duration: 0.3s; 
         padding: 1rem;
     }
 
+    /* settings för huvudknappen när man hoverar */
     .buttonMain:hover {
         background-color: rgb(111, 25, 25);
         color: white;
     }
 
+    /* settings för brödtexten på varje sida */
     .textContent {
         border-radius: 1rem;
         border-style: solid;
@@ -123,6 +140,7 @@
         background-color: rgba(67, 54, 37, 0.5);
     }
 
+    /* settings för brödtexten på höns.html, för spoilerknappen */
     #hiddenText {
         border-radius: 1rem;
         border-style: solid;
@@ -136,6 +154,7 @@
         background-color: rgba(67, 54, 37, 0.5);
     }
 
+    /* bordersettings för hint knappen på anka.html */
     #buttonAnka {
         border-radius: 0.5rem;
         margin: 0 auto;
@@ -144,11 +163,13 @@
         transition-duration: 0.3s;
     }
 
+    /* settings för hint knappen när man hoverar */
     #buttonAnka:hover {
         background-color: black;
         color: white;
     }
 
+    /* textsettings för hint knappen på anka.html */
     #buttonAnkaText {
        text-align: center;
        margin-top: 5px;
@@ -156,6 +177,7 @@
        text-shadow: 1px 1px black;
     }
 
+    /* settings för alla bilder utom dem på index.html, centrerar */
     .bildDisplay {
         display: flex;
         justify-content: center;
