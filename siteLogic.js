@@ -21,7 +21,7 @@ function ankor() {
 
 function ko() {
     var question = prompt("Hur många kor ser du totalt på sidan???");
-    if ((question) == 8) {
+    if ((question) == 2) {
         alert("Du har RÄTT!!");
     }
     else {
