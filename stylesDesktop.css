@@ -51,6 +51,7 @@
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
+        margin-top: 3rem;
     }
 
     /* settings för alla paragrapher inom flex-container-menu */
@@ -184,5 +185,5 @@
         align-items: center;
         margin-top: 2rem;
     }
-
+    
 }

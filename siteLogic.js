@@ -1,8 +1,8 @@
 //Funktion som frågar om grisar i gris.html
 function grisar() {
     var question = "Gillar du grisar??? \n Tryck OK för JA";
-    if (confirm(question) === true) {
-        alert("Nice, jag med!");
+    if (confirm(question) === true) { //Använd inte ==, strict operator === kollar efter om operander
+        alert("Nice, jag med!");      //är lika  tex: 0 == false blir true medan 0 === false blir false
     }
     else {
         alert("Nehe, synd för dig!");
@@ -13,8 +13,8 @@ function grisar() {
 function ankor() {
     var audio = new Audio("sounds/ducks.wav");
     var question = prompt("Hur låter ankor?");
-    if ((question) === "quack") {
-        audio.play();
+    if ((question) === "quack") {   //Använd inte ==, strict operator === kollar efter om operander
+        audio.play();               //är lika  tex: 0 == false blir true medan 0 === false blir false
     }
     else {
         alert("FEL, försök igen!");
@@ -23,7 +23,7 @@ function ankor() {
 
 //Funktion som ber en räkna hur många kossor man ser i kossa.html
 function ko() {
-    var question = prompt("Hur många kor ser du totalt på sidan???");
+    var question = prompt("Hur många kor ser du totalt på sidan???"); //Ej lagt integer för svaret kan vara en string!
     if ((question) === "2") { // 2 = string
         alert("Du har RÄTT!!");
     }
@@ -50,8 +50,8 @@ function hund() {
     var questionTwo = parseInt(prompt("Skriv in ett till tal mellan 1-20"));
     var questionThree = parseInt(prompt("Vad blir summan av dina tal?"));
     var sum = (question+questionTwo);
-    if ((questionThree) === (sum)) {
-        alert("Du har RÄTT!!");
+    if ((questionThree) === (sum)) {  //Använd inte ==, strict operator === kollar efter om operander
+        alert("Du har RÄTT!!");       //är lika  tex: 0 == false blir true medan 0 === false blir false
     }
     else {
         alert("FEL, försök igen!");

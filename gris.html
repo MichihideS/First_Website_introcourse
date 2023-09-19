@@ -10,8 +10,10 @@
 <body>
     <a href="index.html"><h1 class="titleBorder"> Michans Bondgård </h1></a>
 
+    <!-- Knapp för VIKTIG grisfråga -->
     <button class="buttonMain" onclick="grisar()"> Gristrivia! </button>
 
+    <!-- Brödtext med importerad styling -->
     <div class="textContent"> 
         Grisar är väldigt intelligenta djur. Dem äter under större delen av sin vakna tid och gillar även 
         att bada. Grisar är väldigt bra att föda upp eftersom att dem växer snabbt och man kan använda det 
@@ -20,12 +22,14 @@
         som möjligt. Grisar gillar att äta t ex hö eller rotfrukter. 
     </div>
 
+    <!-- Visar större gris bild om bredden är större än 767px och mindre source bild om bredden är mindre -->
     <picture class="bildDisplay">
         <source media="(min-width: 768px)" srcset="pictures/pig.jpg">
         <img src="pictures/pigsmall.jpg">
     </picture>
 
-    <div class="flex-container-menu" style="padding-top: 3rem;">
+    <!-- Mindre navigerings menu längst ner på sidan -->
+    <div class="flex-container-menu">
         <p><a href="anka.html"> Ankor </a></p>
         <p><a href="gris.html"> Grisar </a></p>
         <p><a href="kossa.html"> Kor </a></p>

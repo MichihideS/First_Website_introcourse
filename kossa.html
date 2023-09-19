@@ -10,8 +10,10 @@
 <body>
     <a href="index.html"><h1 class="titleBorder"> Michans Bondgård </h1></a>
 
+    <!-- Knapp för kan du räkna trivia -->
     <button class="buttonMain" onclick="ko()"> Kotrivia! </button>
 
+    <!-- Brödtext med importerad styling -->
     <div class="textContent">
         Kor används i Sverige främst till två olika grejer, antingen till mjölkproduktion eller som kött. 
         Svenska bönder är väldigt bra på att ta hand om sina kor så därför har mjölk och kött från svenska 
@@ -20,12 +22,14 @@
         slag men dem äter även andra former av örter och växter.
     </div>
 
+    <!-- Visar större ko bild om bredden är större än 767px och mindre source bild om bredden är mindre -->
     <picture class="bildDisplay">
         <source media="(min-width: 768px)" srcset="pictures/cow.jpg">
         <img src="pictures/cowsmall.jpg">
     </picture>
 
-    <div class="flex-container-menu" style="padding-top: 3rem;">
+    <!-- Mindre navigerings menu längst ner på sidan -->
+    <div class="flex-container-menu">
         <p><a href="anka.html"> Ankor </a></p>
         <p><a href="gris.html"> Grisar </a></p>
         <p><a href="kossa.html"> Kor </a></p>

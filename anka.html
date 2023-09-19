@@ -10,13 +10,17 @@
 <body>
     <a href="index.html"><h1 class="titleBorder"> Michans Bondgård </h1></a>
 
+    <!-- Knapp för anktrivian -->
     <button class="buttonMain" onclick="ankor()"> Anktrivia! </button>
+    <!-- Hint knappen -->
     <button id="buttonAnka" onclick="ankaHint()"> Hint! </button>
 
+    <!-- själva hintent till hintknappen -->
     <div id="buttonAnkaText" style="display: none;">
         quack quack quack
     </div>
 
+    <!-- Brödtext med importerad styling -->
     <div class="textContent">
         Ankor är väldigt trevliga och fina djur. Dem är inte bara bra till att ha för föda utan dem är bra 
         på att uttrota jobbiga hinder som t ex mördarsniglar. Gillar du ankägg så kommer du inte heller bli 
@@ -25,12 +29,14 @@
         det för att det ger inte dem någon näring!
     </div>
 
+    <!-- Visar större ank bild om bredden är större än 767px och mindre source bild om bredden är mindre -->
     <picture class="bildDisplay">
         <source media="(min-width: 768px)" srcset="pictures/duck.jpg">
         <img src="pictures/ducksmall.jpg">
     </picture>
 
-    <div class="flex-container-menu" style="padding-top: 3rem;">
+    <!-- Mindre navigerings menu längst ner på sidan -->
+    <div class="flex-container-menu">
         <p><a href="anka.html"> Ankor </a></p>
         <p><a href="gris.html"> Grisar </a></p>
         <p><a href="kossa.html"> Kor </a></p>

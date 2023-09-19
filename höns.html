@@ -10,8 +10,10 @@
 <body>
     <a href="index.html"><h1 class="titleBorder"> Michans Bondgård </h1></a>
 
+    <!-- Spoilerknapp för hönsfaktan -->
     <button class="buttonMain" onclick="kycklingar()"> Tryck här för hönsfakta  </button>
 
+    <!-- Brödtext med importerad styling som inte visas från början -->
     <div id="hiddenText" style="display: none;">
         Hönor är en väldigt smart investering om du är intresserad av att ägg på borden. Om man är 
         intresserad av att skaffa höns är det bra att veta att man samtidigt borde skaffa en tupp också. 
@@ -20,12 +22,14 @@
         hönorna. Hönor äter t ex spannmål som vete, korn och havre eller soja, raps och ärtor!
     </div>
 
+    <!-- Visar större höns bild om bredden är större än 767px och mindre source bild om bredden är mindre -->
     <picture class="bildDisplay">
         <source media="(min-width: 768px)" srcset="pictures/hen.jpg">
         <img src="pictures/hensmall.jpg">
     </picture>
 
-    <div class="flex-container-menu" style="padding-top: 3rem;">
+    <!-- Mindre navigerings menu längst ner på sidan -->
+    <div class="flex-container-menu">
         <p><a href="anka.html"> Ankor </a></p>
         <p><a href="gris.html"> Grisar </a></p>
         <p><a href="kossa.html"> Kor </a></p>
