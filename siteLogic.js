@@ -1,7 +1,7 @@
 //Funktion som frågar om grisar i gris.html
 function grisar() {
     var question = "Gillar du grisar??? \n Tryck OK för JA";
-    if (confirm(question) == true) {
+    if (confirm(question) === true) {
         alert("Nice, jag med!");
     }
     else {
@@ -13,7 +13,7 @@ function grisar() {
 function ankor() {
     var audio = new Audio("sounds/ducks.wav");
     var question = prompt("Hur låter ankor?");
-    if ((question) == "quack") {
+    if ((question) === "quack") {
         audio.play();
     }
     else {
@@ -24,7 +24,7 @@ function ankor() {
 //Funktion som ber en räkna hur många kossor man ser i kossa.html
 function ko() {
     var question = prompt("Hur många kor ser du totalt på sidan???");
-    if ((question) == 2) {
+    if ((question) === "2") { // 2 = string
         alert("Du har RÄTT!!");
     }
     else {
@@ -48,8 +48,9 @@ function ankaHint() {
 function hund() {
     var question = parseInt(prompt("Hundar är smarta, är DU? \nSkriv in ett tal mellan 1-20"));
     var questionTwo = parseInt(prompt("Skriv in ett till tal mellan 1-20"));
-    var questionThree = prompt("Vad blir summan av dina tal?");
-    if ((questionThree) == (question+questionTwo)) {
+    var questionThree = parseInt(prompt("Vad blir summan av dina tal?"));
+    var sum = (question+questionTwo);
+    if ((questionThree) === (sum)) {
         alert("Du har RÄTT!!");
     }
     else {
