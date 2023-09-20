@@ -11,10 +11,10 @@ function grisar() {
 
 //Funktion som spelar upp en ljud fil OM man svarar rätt i anka.html
 function ankor() {
-    var audio = new Audio("sounds/ducks.wav");
+    var quack = new Audio("sounds/ducks.wav");
     var question = prompt("Hur låter ankor?");
     if ((question) === "quack") {   //Använd inte ==, strict operator === kollar efter om operander
-        audio.play();               //är lika  tex: 0 == false blir true medan 0 === false blir false
+        quack.play();               //är lika  tex: 0 == false blir true medan 0 === false blir false
     }
     else {
         alert("FEL, försök igen!");
@@ -32,16 +32,14 @@ function ko() {
     }
 }
 
-//Funktion som gömmer en textdel tills man trycker på en knapp i höns.html
+//Funktion som skriver ut text i en alert box
 function kycklingar() {
-    var text = document.getElementById("hiddenText");
-    text.style.display = "block";
+    alert("Hönor kan lägga ägg!");
 }
 
-//Funktion som gömmer en textdel tills man trycker på hint knapp i anka.html
+//Funktion som skriver ut quack quack i en alertbox
 function ankaHint() {
-    var text = document.getElementById("buttonAnkaText");
-    text.style.display = "block";
+    alert("quack quack quack!");
 }
 
 //Funktion som ber en addera 2 tal och skriva ut svaret i hund.html

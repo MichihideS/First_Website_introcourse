@@ -4,8 +4,8 @@
     /* Sätter regler för bakgrund för hela bodyn (täcka skärm + no dupe) */
     body {
         background-image: url(pictures/landscape.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
+        background-size: cover; /* gör så att den täcker hela behållaren */
+        background-repeat: no-repeat; /* duplicerar inte bakgrunden om den tar slut */
     }
 
     /* Bestämmer hur headern ska se ut, position, storlek och skugga */
@@ -19,8 +19,8 @@
     .flex-container {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: center; /* Ändrar main raden dvs ROW här (flex är row by default) "main" */
+        align-items: center; /* Ändrar sub raden dvs COLUMN här "cross" */
         height: 1rem;
         margin-bottom: 6rem;
     }
@@ -49,8 +49,8 @@
     .flex-container-menu {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: center; /* Ändrar main raden dvs ROW här (flex är row by default) "main" */
+        align-items: center; /* Ändrar sub raden dvs COLUMN här "cross" */
         margin-top: 3rem;
     }
 
@@ -77,8 +77,8 @@
     .flex-container-pictures {
         display: flex;
         flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
+        justify-content: center; /* Ändrar main raden dvs ROW här (flex är row by default) "main" */
+        align-items: center; /* Ändrar sub raden dvs COLUMN här "cross" */
     }
 
     /* settings för all div's inom flex-container-pictures */
@@ -110,13 +110,13 @@
 
     /* settings för huvudknappen (trivian med funktioner) på alla sidor utom index.html */
     .buttonMain {
+        display: block; /* visar elementet som ett block, börjar på ny rad och tar upp en hel width */
         border-radius: 1rem;
         background-color: antiquewhite;
         font-size: 2rem;
         border-style: solid;
         border-color: rgb(65, 48, 20);
-        margin: 0 auto; /* Centrerar */
-        display: block; /* Centrerar */
+        margin: auto; /* Centrerar eftersom att vi använder block för att ta upp en hel rad */
         transition-duration: 0.3s; 
         padding: 1rem;
     }
@@ -141,24 +141,10 @@
         background-color: rgba(67, 54, 37, 0.5);
     }
 
-    /* settings för brödtexten på höns.html, för spoilerknappen */
-    #hiddenText {
-        border-radius: 1rem;
-        border-style: solid;
-        padding: 1rem;
-        font-size: 1.5rem;
-        margin-top: 3rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-        color: azure;
-        text-shadow: 1px 1px black;
-        background-color: rgba(67, 54, 37, 0.5);
-    }
-
     /* bordersettings för hint knappen på anka.html */
     #buttonAnka {
         border-radius: 0.5rem;
-        margin: 0 auto;
+        margin: auto;
         display: block;
         margin-top: 0.5rem;
         transition-duration: 0.3s;
@@ -168,14 +154,6 @@
     #buttonAnka:hover {
         background-color: black;
         color: white;
-    }
-
-    /* textsettings för hint knappen på anka.html */
-    #buttonAnkaText {
-       text-align: center;
-       margin-top: 5px;
-       color: aliceblue;
-       text-shadow: 1px 1px black;
     }
 
     /* settings för alla bilder utom dem på index.html, centrerar */
